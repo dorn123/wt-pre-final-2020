@@ -6,46 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <script>
-        var getJSON = function(url, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'json';
-    xhr.onload = function() {
-      var status = xhr.status;
-      if (status === 200) {
-        callback(null, xhr.response);
-      } else {
-        callback(status, xhr.response);
-      }
-    };
-    xhr.send();
-};
-getJSON('https://dd-wtlab2020.netlify.app/pre-final/ezquiz.json',
-function(err, data) {
-  if (err !== null) {
-    alert('Something went wrong: ' + err);
-  } else {
-    alert('Your query count: ' + data.query.count);
-  }
-});
-    </script> -->
-    <!-- <div id="id01"></div>
 
-<script>
-    let requestURL = 'https://dd-wtlab2020.netlify.app/pre-final/ezquiz.json';
-function myFunction(arr) {
-    var out = "";
-    var i;
-    for(i = 0; i<arr.length; i++) {
-        out += '<a href="' + arr[i].url + '">' + arr[i].display + '</a><br>';
-    }
-    document.getElementById("id01").innerHTML = out;
-    document.write(data.track.href + ' '); 
-}
-</script> -->
-
-<!-- <script src="https://dd-wtlab2020.netlify.app/pre-final/ezquiz.json"></script> -->
     <script>
         let requestURL = 'javascript.json'; 
     let request = new XMLHttpRequest(); 
@@ -58,14 +19,9 @@ function myFunction(arr) {
     
     function dataReportStatus(data) { 
         
-        // for (let i = 0; i < data.tracks.length; i++) {            
+                 
             document.write(data.tracks.items[0] + ' '); 
-            // document.write('<b>'+data.track[0+i].Firstname +'</b> ');
-            // document.write('<b>'+data.track[0+i].Lastname +'</b> ('); 
-            // document.write(data.track[0+i].Gender +') is a ');
-            // document.write(data.track[0+i].Position +' ,');
-            // document.write(data.track[0+i].Address +'<br>');
-        // } 
+            
     }
     </script>
 </body>
